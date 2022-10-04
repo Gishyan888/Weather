@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./568503.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.weather_box{
+    width: 40vh;
+    height: 25vh;
+    border-radius: 130px 10px 130px 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.inp_city{
+    width: 60%;
+    height: 4vh;
+    border-radius: 20px;
+    outline: none;
+    background-color: #4a4a4a;
+    border: none;
+    color: white;
+    text-align: center;
+    margin-top: 4vh;
+    font-size: 2.3vh;
+}
+input::placeholder {
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+}
+.requested{
+    color: white;
+    padding-left: 5vh;
+    padding-top: 2vh;
+    display: table;
+}
+@media screen and (max-height:708px){
+    h3{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 13px;
+    }
+}
+@media screen and (max-height:623px){
+    .weather_box{
+        width: 48vh;
+        height: 32vh;
+    }
+}
+@media screen and (max-height:498px){
+    .requested{
+        padding-left: 0;
+        display: grid;
+    }
+    .weather_box{
+        border-radius: 10px;
+    }
+}
+@media screen and (max-height:623px){
+    .weather_box{
+        height: 36vh;
+    }
+}
